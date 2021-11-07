@@ -1,0 +1,301 @@
+@font-face {
+  font-family: customFont;
+  src: url("../font/SutonnyOMJ.ttf");
+}
+
+* {
+  font-family: customFont;
+  color: #000;
+  line-height: 1;
+  font-size: 22px;
+}
+
+body {
+  background-color: white;
+}
+
+.container-certificate {
+  width: 8.27in;
+  height: 11.69in;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: .291in;
+}
+
+.certificate {
+  height: 100%;
+  background-size: 100%;
+  position: relative;
+}
+
+.border-1 {
+  height: 100%;
+  border: 0.02in solid #b26d82;
+  padding: .053in;
+}
+
+.border-2 {
+  height: 100%;
+  border: 0.07in solid #b26d82;
+  position: relative;
+}
+
+.content {
+  padding: .153in .183in;
+}
+
+.watermark {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.watermark img {
+  width: 70%;
+  opacity: .15;
+}
+
+.heading-text {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.sub-heading-text {
+  font-size: 22px;
+}
+
+.small {
+  font-size: 19px;
+}
+
+.top {
+  padding-bottom: .4in;
+}
+
+.top .left {
+  width: 25%;
+  padding-top: .153in;
+}
+
+.top .left .photo {
+  width: 1.43in;
+  height: 1.60in;
+  border: 2px solid #000;
+}
+
+.top .left .photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.top .center {
+  width: 50%;
+}
+
+.top .center .govt-logo img {
+  display: block;
+  width: 1.02in;
+  margin-bottom: 10px;
+}
+
+.top .center .text {
+  font-weight: bold;
+}
+
+.top .center .text .head {
+  font-size: 45px;
+}
+
+.top .center .text .tail {
+  font-size: 31px;
+}
+
+.top .center .text .title {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 10px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+
+.top .right {
+  width: 25%;
+  padding-top: .153in;
+}
+
+.top .right .mujib-borso {
+  width: 1.40in;
+  border: 2px solid #000;
+}
+
+.top .right .mujib-borso img {
+  width: 100%;
+  display: block;
+}
+
+.body {
+  z-index: 5;
+}
+
+.body .date {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.body table th {
+  padding: 10px 0;
+  font-weight: normal;
+}
+
+.body table td {
+  padding: 10px 5px;
+}
+
+.footer table.mayor {
+  width: 100%;
+}
+
+.footer .qr-code {
+  width: 1.06in;
+}
+
+.trade-lisence .content .top .left {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.trade-lisence .content .top .left .photo {
+  width: .910in;
+  border: 0;
+  height: unset;
+}
+
+.trade-lisence .content .top .center .head {
+  font-size: 48px;
+}
+
+.trade-lisence .content .top .center .text .web {
+  font-size: 19px;
+}
+
+.trade-lisence .content .top .right .mujib-borso {
+  border: 0;
+}
+
+.trade-lisence .content .short-description .left table tr td:first-child {
+  width: 1.84in;
+}
+
+.trade-lisence .content .short-description .left table tr td:nth-child(2) {
+  width: 15px;
+}
+
+.trade-lisence .content .short-description .photo {
+  width: 1.443in;
+  height: 1.63in;
+  border: 2px solid #000;
+}
+
+.trade-lisence .content .short-description .photo img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.trade-lisence .content .note {
+  font-size: 15.5px;
+  margin: .32in 0;
+  text-align: center;
+}
+
+.trade-lisence .content table.main td:first-child {
+  width: 2.03in;
+}
+
+.trade-lisence .content table.main td:nth-child(2) {
+  width: 15px;
+}
+
+.trade-lisence .content table.main table.sub {
+  border: 1px solid #000;
+}
+
+.trade-lisence .content table.main table.sub tr th:first-child {
+  width: 1.9in;
+}
+
+.trade-lisence .content table.main table.sub tr th:last-child {
+  width: 1.5in;
+}
+
+.trade-lisence .content table.main table.sub th, .trade-lisence .content table.main table.sub td {
+  padding: 3px 10px;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.trade-lisence .content table.main table.sub th {
+  background-color: #e7e7e8;
+}
+
+.trade-lisence .content table.main .small-text {
+  font-size: 18px;
+}
+
+.trade-lisence .content table.sign {
+  width: 470px;
+  margin-top: 36px;
+}
+
+.trade-lisence .content table.sign tr .left {
+  width: 50%;
+  text-align: center;
+}
+
+.trade-lisence .content table.sign tr .left span {
+  display: inline-block;
+  border-top: 2px solid #000;
+  width: 155px;
+}
+
+.trade-lisence .content table.sign tr .right {
+  text-align: center;
+  width: 50%;
+}
+
+.trade-lisence .content table.sign tr .right span {
+  display: inline-block;
+  border-top: 2px solid #000;
+  width: 155px;
+}
+
+.trade-lisence .content .qr-verify {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.trade-lisence .content .qr-verify .code {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: .91in;
+}
+
+.trade-lisence .content .qr-verify .code img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

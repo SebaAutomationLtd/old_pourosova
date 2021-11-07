@@ -1,0 +1,279 @@
+@import "colors";
+@import "classes";
+@font-face {
+    font-family: customFont;
+    src: url("../font/SutonnyOMJ.ttf");
+}
+*{
+    font-family: customFont;
+    color: $black;
+    line-height: 1;
+    font-size: 22px;
+}
+
+body{
+    background-color: white;
+}
+.container-certificate{
+    width: 8.27in;
+    height: 11.69in;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: .291in;
+}
+.certificate{
+    height: 100%;
+    background-size: 100%;
+    position: relative;
+
+}
+.border-1{
+    height: 100%;
+    border: .02in solid $primary;
+    padding: .053in;
+}
+.border-2{
+    height: 100%;
+    border: .070in solid $primary;
+    position: relative;
+
+}
+.content{
+    padding: .153in .183in;
+}
+.watermark{
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img{
+        width: 70%;
+        opacity: .15;
+    }
+}
+.heading-text{
+    font-size: 26px;
+    font-weight: bold;
+}
+.sub-heading-text{
+    font-size: 22px;
+}
+.small{
+    font-size: 19px;
+}
+.top{
+    .left{
+        width: 25%;
+        padding-top: .153in;
+        .photo{
+            width: 1.43in;
+            height: 1.60in;
+            border: 2px solid $black;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .center{
+        width: 50%;
+        .govt-logo{
+            img{
+                display: block;
+                width: 1.02in;
+                margin-bottom: 10px;
+            }
+        }
+        .text{
+            font-weight: bold;
+            .head{
+                font-size: 45px;
+            }
+            .tail{
+                font-size: 31px;
+                
+            }
+            .title{
+                font-size: 20px;
+                background-color: $black;
+                color: $white;
+                display: inline-block;
+                padding: 6px 10px;
+                padding-bottom: 3px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .right{
+        width: 25%;
+        padding-top: .153in;
+        .mujib-borso{
+            width: 1.40in;
+            border: 2px solid $black;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    padding-bottom: .4in;
+}
+.body{
+    z-index: 5;
+    .date{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    table{
+        th{
+            padding: 10px 0;
+            font-weight: normal;
+        }
+        td{
+            padding: 10px 5px;
+        }
+    }
+}
+
+.footer{
+    table.mayor{
+        width: 100%;
+    }
+    .qr-code{
+        width: 1.06in;
+    }
+}
+
+.trade-lisence{
+    .content {
+        .top{
+            .left{
+                align-self: flex-start;
+                .photo{
+                    width: .910in;
+                    border: 0;
+                    height: unset;
+                }
+            }
+            .center{
+                .head{
+                    font-size: 48px;
+                }
+                .text{
+                    .web{
+                        font-size: 19px;
+                    }
+                }
+            }
+            .right{
+                .mujib-borso{
+                    border: 0;
+                }
+            }
+        }
+        .short-description{
+            .left{
+                table{
+                    tr{
+                        td:first-child{
+                            width: 1.84in;
+                        }
+                        td:nth-child(2){
+                            width:15px;
+                        }
+                    }
+                }
+            }
+            .photo{
+                width: 1.443in;
+                height: 1.63in;
+                border: 2px solid $black;
+                img{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .note{
+            font-size: 15.5px;
+            margin: .32in 0;
+            text-align: center;
+        }
+        table.main{
+            td:first-child{
+                width: 2.03in;
+            }
+            td:nth-child(2){
+                width: 15px;
+            }
+            table.sub{
+                border: 1px solid $black;
+                tr{
+                    th:first-child{
+                        width: 1.9in;
+                    }
+                    th:last-child{
+                        width: 1.5in;
+                    }
+                }
+                th, td{
+                    padding: 3px 10px;
+                    font-size: 18px;
+                    border: 1px solid $black;
+                }
+                th{
+                    background-color: #e7e7e8;
+                }
+            }
+            .small-text{
+                font-size: 18px;
+            }
+            
+        }
+        table.sign{
+            width: 470px;
+            margin-top: 36px;
+            tr{
+                .left{
+                    span{
+                        display: inline-block;
+                        border-top: 2px solid $black;
+                        width: 155px;
+                    }
+                    width: 50%;
+                    text-align: center;
+                }
+                .right{
+                    span{
+                        display: inline-block;
+                        border-top: 2px solid $black;
+                        width: 155px;
+                    }
+                    text-align: center;
+                    width: 50%;
+                }
+            }
+        }
+
+        .qr-verify{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            .code{
+                margin: 0 auto;
+                margin-bottom: 5px;
+                width: .91in;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    } // Content End
+}
+    

@@ -1,0 +1,1 @@
+layout_master.blade.php

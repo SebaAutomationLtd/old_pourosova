@@ -1,0 +1,77 @@
+@import "colors";
+@import "classes";
+// @font-face {
+//     font-family: customFont;
+//     src: url("../font/SutonnyOMJ.ttf");
+// }
+// @font-face {
+//     font-family: kalpurus;
+//     src: url("../font/kalpurush.ttf");
+// }
+
+main {
+    height: 14in !important;
+    width: 8.5in !important;
+}
+
+header {
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-text {
+        span {
+            display: block;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .heading-text {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .sub-heading-text {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .report-name {
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+    .ward-village {
+        font-size: 22px;
+        margin: 5px 0;
+    }
+}
+
+.watermark {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 70%;
+        opacity: 0.15;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    th,
+    td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,589 @@
+@font-face {
+  font-family: customFont;
+  src: url("../font/SutonnyOMJ.ttf");
+}
+
+@font-face {
+  font-family: kalpurus;
+  src: url("../font/kalpurush.ttf");
+}
+
+* {
+  color: #000;
+  line-height: 1;
+}
+
+body {
+  background-color: white;
+}
+
+.container-certificate {
+  font-size: 22px;
+  font-family: customFont;
+  width: 8.27in;
+  height: 11.69in;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0.291in;
+}
+
+.certificate {
+  height: 100%;
+  background-size: 100%;
+  position: relative;
+}
+
+.border-1 {
+  height: 100%;
+  border: 0.02in solid #b26d82;
+  padding: 0.053in;
+}
+
+.border-2 {
+  height: 100%;
+  border: 0.07in solid #b26d82;
+  position: relative;
+}
+
+.content {
+  padding: 0.153in 0.183in;
+}
+
+.watermark {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.watermark img {
+  width: 70%;
+  opacity: 0.15;
+}
+
+.heading-text {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.sub-heading-text {
+  font-size: 22px;
+}
+
+.small {
+  font-size: 19px;
+}
+
+.top {
+  padding-bottom: 0.4in;
+}
+
+.top .left {
+  width: 25%;
+  padding-top: 0.153in;
+}
+
+.top .left .photo {
+  width: 1.43in;
+  height: 1.6in;
+  border: 2px solid #000;
+}
+
+.top .left .photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.top .center {
+  width: 50%;
+}
+
+.top .center .govt-logo img {
+  display: block;
+  width: 1.02in;
+  margin-bottom: 10px;
+}
+
+.top .center .text {
+  font-weight: bold;
+}
+
+.top .center .text .head {
+  font-size: 45px;
+}
+
+.top .center .text .tail {
+  font-size: 31px;
+}
+
+.top .center .text .title {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 10px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+
+.top .right {
+  width: 25%;
+  padding-top: 0.153in;
+}
+
+.top .right .mujib-borso {
+  width: 1.4in;
+  border: 2px solid #000;
+}
+
+.top .right .mujib-borso img {
+  width: 100%;
+  display: block;
+}
+
+.body {
+  z-index: 5;
+}
+
+.body .date {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.body table th {
+  padding: 10px 0;
+  font-weight: normal;
+}
+
+.body table td {
+  padding: 10px 5px;
+}
+
+.footer table.mayor {
+  width: 100%;
+}
+
+.footer .qr-code {
+  width: 1.06in;
+}
+
+.trade-lisence .content .top .left {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.trade-lisence .content .top .left .photo {
+  width: 0.91in;
+  border: 0;
+  height: unset;
+}
+
+.trade-lisence .content .top .center .head {
+  font-size: 48px;
+}
+
+.trade-lisence .content .top .center .text .web {
+  font-size: 19px;
+}
+
+.trade-lisence .content .top .right .mujib-borso {
+  border: 0;
+}
+
+.trade-lisence .content .short-description .left table tr td:first-child {
+  width: 1.84in;
+}
+
+.trade-lisence .content .short-description .left table tr td:nth-child(2) {
+  width: 15px;
+}
+
+.trade-lisence .content .short-description .photo {
+  width: 1.443in;
+  height: 1.63in;
+  border: 2px solid #000;
+}
+
+.trade-lisence .content .short-description .photo img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.trade-lisence .content .note {
+  font-size: 15.5px;
+  margin: 0.32in 0;
+  text-align: center;
+}
+
+.trade-lisence .content table.main td:first-child {
+  width: 2.03in;
+}
+
+.trade-lisence .content table.main td:nth-child(2) {
+  width: 15px;
+}
+
+.trade-lisence .content table.main table.sub {
+  border: 1px solid #000;
+}
+
+.trade-lisence .content table.main table.sub tr th:first-child {
+  width: 1.9in;
+}
+
+.trade-lisence .content table.main table.sub tr th:last-child {
+  width: 1.5in;
+}
+
+.trade-lisence .content table.main table.sub th,
+.trade-lisence .content table.main table.sub td {
+  padding: 3px 10px;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.trade-lisence .content table.main table.sub th {
+  background-color: #e7e7e8;
+}
+
+.trade-lisence .content table.main .small-text {
+  font-size: 18px;
+}
+
+.trade-lisence .content table.sign {
+  width: 470px;
+  margin-top: 36px;
+}
+
+.trade-lisence .content table.sign tr .left {
+  width: 50%;
+  text-align: center;
+}
+
+.trade-lisence .content table.sign tr .left span {
+  display: inline-block;
+  border-top: 2px solid #000;
+  width: 155px;
+}
+
+.trade-lisence .content table.sign tr .right {
+  text-align: center;
+  width: 50%;
+}
+
+.trade-lisence .content table.sign tr .right span {
+  display: inline-block;
+  border-top: 2px solid #000;
+  width: 155px;
+}
+
+.trade-lisence .content .qr-verify {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.trade-lisence .content .qr-verify .code {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 0.91in;
+}
+
+.trade-lisence .content .qr-verify .code img {
+  width: 100%;
+}
+
+.trade-lisence .content .gen-member-report .left {
+  padding-top: 0;
+}
+
+.trade-lisence .content .gen-member-report .right {
+  padding-top: 0;
+}
+
+.trade-lisence .content .gen-member-report .center .head {
+  font-size: 37px;
+}
+
+.trade-lisence .content .gen-member-report .center .tail {
+  font-size: 23px;
+}
+
+.container-certificate.landscape {
+  width: 11.69in !important;
+  height: 8.27in !important;
+  font-family: kalpurus !important;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0.291in;
+  font-size: 16px;
+}
+
+.container-certificate.landscape .content {
+  padding: 0;
+}
+
+.container-certificate.landscape .content .watermark img {
+  width: 50%;
+  margin-top: 85px;
+}
+
+.container-certificate.landscape .content .top {
+  padding-bottom: 0;
+  position: relative;
+}
+
+.container-certificate.landscape .content .top .ward-village {
+  position: absolute;
+  width: 100%;
+  font-size: 23px;
+  bottom: -16px;
+}
+
+.container-certificate.landscape .content .top .ward-village .ward {
+  float: left;
+}
+
+.container-certificate.landscape .content .top .ward-village .village {
+  float: right;
+}
+
+.container-certificate.landscape .content .top .mujib-borso {
+  width: 1.2in;
+}
+
+.container-certificate.landscape .content .top .photo {
+  width: 0.8in;
+}
+
+.container-certificate.landscape .content .data {
+  margin-top: 20px;
+}
+
+.container-certificate.landscape .content .data table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.container-certificate.landscape .content .data table tr th,
+.container-certificate.landscape .content .data table tr td {
+  border: 1px solid black;
+  padding: 5.5px 5px;
+}
+
+.container-certificate.landscape .content .data table tr th {
+  text-align: center;
+}
+
+.memo {
+  font-family: kalpurus;
+  width: 11.69in !important;
+  height: 8.27in !important;
+  margin: auto;
+}
+
+.memo .font-26 {
+  font-size: 26px;
+}
+
+.memo .font-17 {
+  font-size: 17px;
+}
+
+.memo .font-18 {
+  font-size: 18px;
+}
+
+.memo .left-side {
+  width: 5.845in;
+  height: 100%;
+}
+
+.memo .right-side {
+  width: 5.845in;
+  height: 100%;
+  border-left: 1px solid #d2d2d2;
+}
+
+.memo .memo-item {
+  padding: 0.45in;
+  position: relative;
+}
+
+.memo .memo-item .water-color {
+  position: absolute;
+  background-color: #fff;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.memo .memo-item .watermark {
+  position: absolute;
+  z-index: -1;
+}
+
+.memo .memo-item .watermark img {
+  width: 3.5in;
+}
+
+.memo .memo-item .header .left {
+  width: 1.2in;
+}
+
+.memo .memo-item .header .left .logo {
+  width: 0.72in;
+}
+
+.memo .memo-item .header .left .logo img {
+  width: 100%;
+}
+
+.memo .memo-item .header .memo-title {
+  width: 100%;
+}
+
+.memo .memo-item .header .right {
+  width: 1.2in;
+}
+
+.memo .memo-item .header .right .mujib-borso {
+  width: 0.95in;
+}
+
+.memo .memo-item .header .right .mujib-borso img {
+  width: 100%;
+}
+
+.memo .memo-item .name .item {
+  padding: 3px 0;
+}
+
+.memo .memo-item .name .item span {
+  font-weight: bold;
+}
+
+.memo .memo-item .details .main {
+  width: 100%;
+  height: 350px;
+  border: 1px solid black;
+}
+
+.memo .memo-item .details .main th {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.memo .memo-item .details .main td {
+  border-right: 1px solid black;
+  padding: 6px 5px;
+  line-height: 1.3;
+  vertical-align: text-top;
+}
+
+.memo .memo-item .details .main td:last-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.memo .memo-item .details .main td:nth-child(2) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.memo .memo-item .footer .sign {
+  display: inline-block;
+  border-top: 1px solid black;
+  width: 140px;
+}
+
+.memo .memo-item .footer table {
+  width: 100%;
+}
+
+.memo .memo-item .footer table .bottom {
+  padding-top: 5px;
+}
+
+.memo .memo-item .footer small {
+  font-size: 60%;
+}
+
+.left-side,
+.right-side {
+  font-size: 120%;
+}
+
+.warish {
+  font-size: 21px;
+}
+
+.warish .sub-heading-text {
+  font-size: 21px;
+}
+
+.warish .top {
+  padding-bottom: 15px;
+}
+
+.warish .top .photo {
+  border: 0;
+}
+
+.warish .top .photo img {
+  width: 100%;
+  height: unset;
+}
+
+.warish .top .mujib-borso {
+  border: 0;
+}
+
+.warish table.warish {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.warish table.warish th {
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 5px 1px 5px;
+}
+
+.warish table.warish th,
+.warish table.warish td {
+  border: 1px solid #000;
+}
+
+.warish table.warish td {
+  padding: 1px 5px;
+}
+
+.warish .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  padding: 0 0.183in;
+}
+
+.warish .footer table.mayor {
+  margin-bottom: -40px;
+  margin-top: 33px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+@import "colors";
+@import "classes";
+@font-face {
+    font-family: customFont;
+    src: url("../font/solaimanlipi.ttf");
+}
+
+#login-page {
+    background: url("../images/svg/background.svg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    #top {
+        background: $l1;
+        border-bottom: 5px solid $l2;
+        img {
+            width: 80px;
+        }
+        .title {
+            font-size: 25px;
+            font-weight: 900;
+            color: #34444c;
+            font-family: customFont;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: #34444c;
+        }
+    }
+
+    #login-panel {
+        .panel {
+            margin-top: 100px;
+            background: $white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .title {
+                color: $l2;
+            }
+            i {
+                font-family: "Font Awesome 5 Free";
+            }
+            .submit-btn {
+                background-color: $l2;
+                color: $white;
+                border-radius: 0;
+            }
+            .form-control:focus {
+                box-shadow: none;
+                outline: 0;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .footer-image {
+            position: absolute;
+            width: 400px;
+            right: 40px;
+            bottom: 40px;
+        }
+    }
+}
